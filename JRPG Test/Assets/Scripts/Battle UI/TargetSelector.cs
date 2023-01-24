@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TargetSelector : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string actionName;
+    public int activeCombatantIndex;
+    public Text targetName;
 
-    // Update is called once per frame
-    void Update()
+    public void OnSelect()
     {
-        
+        // player does the selected attack via battle manager
     }
 }

@@ -2,7 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Combatant : MonoBehaviour
+/*
+    This class represents an active unit in a battle or party. 
+    Has a fade function which currently causes the Combatant sprite to fade to red... might need a lot of change after some testing to be more modular
+    maybe it could work with ActionFX?
+*/
+
+public class Combatant : MonoBehaviour // Battler
 {
     public bool isPlayer;
     public List<string> actionsAvailable = new List<string>();

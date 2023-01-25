@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleStarter : MonoBehaviour
+/*
+    This class keeps track of if it is time to begin a battle or encounter depending on what the player is doing.
+    Presumably, the battleAttributes list will be randomized from a table or hard coded depending on the encounter zone.
+*/
+
+public class BattleStarter : MonoBehaviour // EncounterStarter
 {
     public BattleAttributes[] battleAttributes;
-    public bool encounterOnEnter, encounterOnStay, encounterOnExit,
-                deactivateObj, unableToRun;
+    public bool encounterOnEnter, encounterOnStay, encounterOnExit, deactivateObj;
     private bool playerInEncounterZone;
     public float encounterTime = 10f;
     private float encounterTimer;

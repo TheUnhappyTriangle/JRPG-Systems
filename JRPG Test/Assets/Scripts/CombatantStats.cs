@@ -2,8 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    This class represents the base stats for each possible participant in battle.
+    Should be a scriptable obj. 
+    Should be loaded from JSON files?
+*/
+
 public enum expGainType { Slow, Medium, Fast };
-public class CombatantStats : MonoBehaviour
+public class CombatantStats : MonoBehaviour // Battler Stats
 {
     public string name, equipItem;
     public int levelCur, levelMax, 

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    This class represents text that will appear on screen, giving valuable information to the player.
+    It has a set duration of time in which it will be on screen before it is set to inactive.
+*/
+
 public class BattleMessage : MonoBehaviour
 {
     public float messageDuration, messageCountdown;

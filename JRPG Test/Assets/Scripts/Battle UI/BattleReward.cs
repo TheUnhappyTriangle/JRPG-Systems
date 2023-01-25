@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BattleReward : MonoBehaviour
+/*
+    This class is a singleton which represents the screen that occurs at the end of a battle.
+    It will show the player how much exp they received, what items they have earned, and whether quests have been updated.
+*/
+
+public class BattleReward : MonoBehaviour // BattleRewardScreen
 {
     public static BattleReward Instance { get; private set; }
     public Text expText, itemText;
@@ -12,6 +17,7 @@ public class BattleReward : MonoBehaviour
     public int expEarned;
     public List<string> rewardedItems = new List<string>();
     
+    //quest info
 
     // Start is called before the first frame update
     void Awake()
@@ -22,7 +28,7 @@ public class BattleReward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.Y)) // debug button
         {
             OpenRewardsScreen(54, new List<string> { "Iron sword", "Iron Armor" });
         }

@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    This class is the nexus point for all things that occur in a battle.
+*/
+
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager Instance { get; private set; }

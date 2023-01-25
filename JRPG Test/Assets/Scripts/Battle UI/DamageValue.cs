@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DamageValue : MonoBehaviour
+/*
+    This class represents numbers that will appear on screen, showing how much damage an attack of effect caused.
+    It has a "placementJitter" parameter which will allow for variance in where the damage value is placed.
+*/
+
+public class DamageValue : MonoBehaviour // HitValue
 {
     public Text hitValueText;
     public float numDuration = 1.0f, moveSpeed = 1.0f, placementJitter = 0.5f;

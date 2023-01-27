@@ -9,7 +9,7 @@ using UnityEngine.UI;
     If there is enough to cover the cost, the combatant moves on to target selection.
 */
 
-public class ActionSelector : MonoBehaviour // BattleActionSelector
+public class ActionSelection : MonoBehaviour // BattleActionSelector
 {
     public string actionName;
     public int actionCost;

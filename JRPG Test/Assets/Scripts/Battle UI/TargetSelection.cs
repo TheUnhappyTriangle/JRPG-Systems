@@ -8,7 +8,7 @@ using UnityEngine.UI;
     When the target is selected, the battle manager is contacted to figure out what needs to occur.
 */
 
-public class TargetSelector : MonoBehaviour
+public class TargetSelection : MonoBehaviour
 {
     public string actionName;
     public int activeCombatantIndex;

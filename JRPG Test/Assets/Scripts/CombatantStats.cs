@@ -9,6 +9,7 @@ using UnityEngine;
 */
 
 public enum expGainType { Slow, Medium, Fast };
+
 public class CombatantStats : MonoBehaviour // Battler Stats
 {
     public string name, equipItem;
